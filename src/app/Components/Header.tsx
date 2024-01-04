@@ -49,7 +49,7 @@ const Header = () => {
                                 </div>
                                 {/* <a href='https://www.vroomdelivery.com/powermarket' target='_blank' rel='noopener noreferrer'> */}
                                 <div className="flex justify-center w-full">
-                                    <Link href={'/papa-sals'}>Papa Sal’s Dely</Link>
+                                    <Link href={'/papa-sals'}>Papa Sal’s Deli</Link>
                                 </div>
                                 {/* </a> */}
                                 <div onClick={toggleMenu} className=" absolute right-3 top-3 cursor-pointer">

@@ -2,6 +2,7 @@ import image1 from '../../../public/images/reward.png'
 import image2 from '../../../public/images/reward2.png'
 import image3 from '../../../public/images/reward3.png'
 import image from '../../../public/images/scanning.png'
+import rewardsImage from '../../../public/how_it_works.png'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -32,7 +33,12 @@ export default function Reward() {
         },
     ]
     return (
-        <div className="w-full ] md:py-[60px] flex justify-center">
+        <div className="w-full ] md:py-[60px] flex-col flex items-center">
+            <Image
+                src={rewardsImage}
+                alt="rewards steps"
+                className="w-full max-w-[1200px] h-auto max-h-[200px] max-lg:max-h-[156px] rounded-[16px] mb-5"
+            />
             <div className="w-[90%] h-full max-w-[1120px] ">
                 {/* <div className="w-full text-center text-[#444444] font-semibold text-[28px]">Get the power market app</div> */}
                 <div className="w-full md:h-[340px] flex justify-between max-md:flex-wrap mt-6">
