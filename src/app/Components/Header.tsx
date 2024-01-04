@@ -72,7 +72,7 @@ const Header = () => {
                         <Link href={'/rewards'}>Rewards</Link>
                         <Link href={'/'}>Carwash</Link>
                         {/* <a href='https://www.vroomdelivery.com/powermarket' target='_blank' rel='noopener noreferrer'> */}
-                        <Link href={'/papa-sals'}>Papa Sal’s Dely</Link>
+                        <Link href={'/papa-sals'}>Papa Sal’s Deli</Link>
                         {/* </a> */}
                     </div>
                     <Link href={'/download'} className="w-[175px] h-[35px] bg-[#75BE41] max-lg:w-[150px] rounded-[16px] text-white font-semibold text-[16px] max-lg:text-[14px] max-md:w-[130px] max-md:h-[30px] max-md:text-[12px] cursor-pointer flex justify-center items-center">Download our App</Link>
