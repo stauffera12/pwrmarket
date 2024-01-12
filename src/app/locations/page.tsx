@@ -23,6 +23,7 @@ import Image from 'next/image';
 import iconmap from '../../../public/images/iconmap.png'
 import { IoFilter } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
+import { usePathname } from "next/navigation";
 
 export default function Locations() {
   const [lat, setLat] = useState(38.592752);
@@ -220,7 +221,7 @@ const PlacesAutocomplete = ({
       },
     },
   });
-
+  const pathname = usePathname();
   const [locationList, setLocationList] = useState(Data.CategoryListData)
   const [radioSearch, setRadioSearch] = useState("location")
   const [distance, setDistance] = useState<string[]>([])
@@ -236,6 +237,16 @@ const PlacesAutocomplete = ({
     setRadioSearch(e.target.value)
   }
 
+   useEffect(() => {
+    if (pathname && pathname !== "/locations") {
+      setRadioSearch("storeId");
+      const segments = pathname.split("/");
+      const lastSegment = segments[segments.length - 1];
+      setResult(lastSegment);
+      handleSearch();
+    }
+  }, [pathname]);
+  
   useEffect(() => {
     getUserLocation();
   }, [])
