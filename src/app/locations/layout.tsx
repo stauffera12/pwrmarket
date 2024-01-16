@@ -1,17 +1,16 @@
 export async function generateMetadata() {
-    return {
-        title: "locations",
-        description: "Find a PWRmarket Near You",
-        image: "/images/story1.png",
-    }
+  return {
+    title: "Locations",
+    description: "Find a PWRmarket Near You",
+    image: "/images/story1.png",
+    keywords: "powermarket, california, gas station, rest stop, food",
+  };
 }
 
 export default function PageLayout({
-    children
+  children,
 }: {
-    children: React.ReactNode,
+  children: React.ReactNode;
 }) {
-    return (
-        <section >{children}</section>
-    )
+  return <section>{children}</section>;
 }

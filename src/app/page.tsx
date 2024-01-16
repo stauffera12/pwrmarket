@@ -11,8 +11,9 @@ import Footer from "./Components/Footer";
 import { HomeBannner } from "./Components/HomeBanner";
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "power market",
+  title: "Power Market",
   description: "power market",
+  keywords: "powermarket, california, gas station, rest stop, food",
 };
 
 export default function Home() {

@@ -1,17 +1,17 @@
 export async function generateMetadata() {
-    return {
-        title: "rewards",
-        description: "Our foods, beverages, and healthy options are always fresh, delicious, and made for you. ",
-        image: "/images/reward.png",
-    }
+  return {
+    title: "Rewards",
+    description:
+      "Our foods, beverages, and healthy options are always fresh, delicious, and made for you. ",
+    image: "/images/reward.png",
+    keywords: "powermarket, california, gas station, rest stop, food",
+  };
 }
 
 export default function PageLayout({
-    children
+  children,
 }: {
-    children: React.ReactNode,
+  children: React.ReactNode;
 }) {
-    return (
-        <section >{children}</section>
-    )
+  return <section>{children}</section>;
 }
