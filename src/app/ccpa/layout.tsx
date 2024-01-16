@@ -1,6 +1,6 @@
 export async function generateMetadata() {
   return {
-    title: "Ccpa",
+    title: "CCPA",
     description: "submit form",
     image: "/images/story1.png",
     keywords: "powermarket, california, gas station, rest stop, food",

@@ -3,8 +3,9 @@ import Footer from "../Components/Footer";
 import PaPaComponent from "../Components/Papa";
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "papa-sals",
+  title: "Papa Sal’s Deli",
   description: "papa-sals",
+  keywords: "powermarket, california, gas station, rest stop, food",
 };
 
 export default function Rewards() {

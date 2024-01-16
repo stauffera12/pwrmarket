@@ -1,6 +1,6 @@
 export async function generateMetadata() {
   return {
-    title: "Terms-and-conditions",
+    title: "Terms & Conditions",
     description:
       "Welcome to Power Market! These Terms and Conditions (these “Terms”) apply to your access to, and your use of our website located",
     image: "/images/story1.png",
