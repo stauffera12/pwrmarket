@@ -143,7 +143,7 @@ export default function Locations() {
   return (
     <div className="w-screen h-screen overflow-x-hidden overflow-y-auto">
       <Header />
-      <div className="w-full mt-[120px] max-md:mt-[75px] lg:pl-[4%] flex justify-center max-md:flex-wrap">
+      <main className="w-full mt-[120px] max-md:mt-[75px] lg:pl-[4%] flex justify-center max-md:flex-wrap">
         <div className="w-[40%] max-lg:w-[40%] md:px-4 lg:pl-0 lg:pr-7 max-md:w-[90%]">
           <PlacesAutocomplete
             onAddressSelect={(address) => {
@@ -193,7 +193,7 @@ export default function Locations() {
             })}
           </GoogleMap>
         </div>
-      </div>
+      </main>
       <Footer />
     </div>
   );
@@ -504,17 +504,23 @@ const PlacesAutocomplete = ({
         </div>
       </fieldset>
       {radioSearch === "location" ? (
-        <input
-          value={value}
-          className="autocompleteInput"
-          disabled={!ready}
-          onChange={(e) => setValue(e.target.value)}
-          placeholder={
-            radioSearch === "location"
-              ? "Enter an address, city, or zip code."
-              : "Enter store #"
-          }
-        />
+        <div>
+          <label htmlFor="addressInput">
+            Enter an address, city, or zip code:
+          </label>
+          <input
+            id="addressInput"
+            value={value}
+            className="autocompleteInput"
+            disabled={!ready}
+            onChange={(e) => setValue(e.target.value)}
+            placeholder={
+              radioSearch === "location"
+                ? "Enter an address, city, or zip code."
+                : "Enter store #"
+            }
+          />
+        </div>
       ) : (
         <input
           value={result}
