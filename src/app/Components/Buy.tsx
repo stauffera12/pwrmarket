@@ -31,6 +31,7 @@ export default function Buy() {
 
           <Link
             href={"/rewards"}
+            aria-label="Fresh and delicious foods and beverages at Power Market"
             className=" mt-5 md:w-[200px] max-md:w-[180px] h-[45px] flex justify-center items-center border-[4px]  border-[#75BE41] bg-white hover:bg-[#75BE41] hover:text-white  rounded-[22px] text-[#444444] font-semibold  md:font-bold max-md:text-[14px]"
           >
             How to Reward yourself
@@ -38,7 +39,12 @@ export default function Buy() {
         </div>
 
         <div className=" absolute top-0 left-0 w-full h-full flex justify-end max-md:hidden ">
-          <div className="w-[70%] h-full" style={backgroundImageStyle}></div>
+          <div
+            role="img"
+            aria-label="Rewards wallpaper"
+            className="w-[70%] h-full"
+            style={backgroundImageStyle}
+          ></div>
         </div>
       </div>
     </div>

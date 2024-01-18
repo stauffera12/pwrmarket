@@ -1,3 +1,4 @@
+"use client";
 import menu1 from "../../../public/images/menu/icon1.png";
 import menu2 from "../../../public/images/menu/icon2.png";
 import menu3 from "../../../public/images/menu/icon3.png";
@@ -9,7 +10,7 @@ import menu8 from "../../../public/images/menu/icon8.png";
 
 import Image from "next/image";
 
-export default function Menu() {
+const Menu = () => {
   const data = [
     {
       Image: menu1,
@@ -44,6 +45,7 @@ export default function Menu() {
       text: "Health, Grocery & Ice",
     },
   ];
+
   return (
     <div className="w-full bg-white py-[60px] max-md:py-6 flex justify-center">
       <div className="w-[90%] h-full max-w-[1120px] ">
@@ -60,6 +62,7 @@ export default function Menu() {
                 href="https://www.vroomdelivery.com/powermarket"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`Opens in a new tab: Power market`}
               >
                 <div className=" w-full h-full flex justify-center items-center flex-wrap cursor-pointer hover:transform hover:scale-110 transition-transform ease duration-300">
                   <Image
@@ -78,4 +81,5 @@ export default function Menu() {
       </div>
     </div>
   );
-}
+};
+export default Menu;

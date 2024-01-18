@@ -20,8 +20,9 @@ const Header = () => {
           <Link
             href={"/locations"}
             className="cursor-pointer flex gap-3 hover:text-black hover:font-semibold"
+            aria-label="Locations"
           >
-            <Image src={map} alt={"icon"} />
+            <Image src={map} alt={"Map icon"} />
             Locations
           </Link>
           <div className="flex gap-5">
@@ -54,7 +55,9 @@ const Header = () => {
                 style={{ backgroundColor: "rgba(255, 255, 255, 0.8)" }}
               >
                 <button className="flex justify-center w-full">
-                  <Link href={"/deals"}>Deals</Link>
+                  <Link aria-label="deals" href={"/deals"}>
+                    Deals
+                  </Link>
                 </button>
                 <button className="flex justify-center w-full">
                   <Link href={"/rewards"}>Rewards</Link>
@@ -63,7 +66,9 @@ const Header = () => {
                   <Link href={"/"}>Carwash</Link>
                 </button>
                 <button className="flex justify-center w-full">
-                  <Link href={"/papa-sals"}>Papa Sal’s Deli</Link>
+                  <Link aria-label="Papa Sal’s Deli" href={"/papa-sals"}>
+                    Papa Sal’s Deli
+                  </Link>
                 </button>
                 <button
                   onClick={toggleMenu}
@@ -76,16 +81,35 @@ const Header = () => {
           </div>
 
           <div className="flex gap-5 max-lg:w-[190px] max-md:w-[130px] ">
-            <Link href={"/"}>
-              <Image src={Logo} alt="powerMarket logo"></Image>
+            <Link
+              href={"https://www.pwrmarket.com/"}
+              aria-label="Visit powerMarket website"
+            >
+              <Image
+                src={Logo}
+                alt="powerMarket logo - Click to visit powerMarket website"
+              ></Image>
             </Link>
           </div>
           <nav className="flex justify-between font-semibold text-[16px] text-[#444444] w-[40%] max-lg:text-[14px] max-lg:w-[45%] max-md:hidden">
-            <Link href={"/"}>Home</Link>
-            <Link href={"/deals"}>Deals</Link>
-            <Link href={"/rewards"}>Rewards</Link>
-            <Link href={"/"}>Carwash</Link>
-            <Link href={"/papa-sals"}>Papa Sal’s Deli</Link>
+            <Link href={"/"} aria-label="Home">
+              Home
+            </Link>
+            <span className="sr-only">
+              Both links lead to the homepage of powerMarket.
+            </span>
+            <Link href={"/deals"} aria-label="deals">
+              Deals
+            </Link>
+            <Link href={"/rewards"} aria-label="View rewards">
+              Rewards
+            </Link>
+            <Link href={"/"} aria-label="Carwash">
+              Carwash
+            </Link>
+            <Link href={"/papa-sals"} aria-label="Papa Sal’s Deli">
+              Papa Sal’s Deli
+            </Link>
           </nav>
           {/* <Link
             href={"/download"}
@@ -95,6 +119,7 @@ const Header = () => {
           </Link> */}
           <Link
             href={"/download"}
+            aria-label="Power Market App download"
             className="w-[175px] h-[35px] bg-[#00796B] max-lg:w-[150px] rounded-[16px] text-white font-semibold text-[16px] max-lg:text-[14px] max-md:w-[130px] max-md:h-[30px] max-md:text-[12px] cursor-pointer flex justify-center items-center transition duration-300 ease-in-out hover:bg-[#004D40] focus:outline-none focus:ring focus:border-blue-300 focus:bg-[#004D40]"
           >
             Download our App

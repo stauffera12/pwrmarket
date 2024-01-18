@@ -15,6 +15,7 @@ export default function Career() {
                 href="https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=fe247937-30ea-42e9-897c-7e49746c78f8&ccId=9200028200615_2&lang=en_US"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Apply Now (opens in a new tab): Workforcenow recruitment page"
               >
                 <button className="w-[115px] h-[35px] rounded-[37px] bg-[#005DB8] text-white">
                   Apply Now

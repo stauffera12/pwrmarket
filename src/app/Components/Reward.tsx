@@ -13,6 +13,7 @@ export default function Reward() {
       text: "Our foods, beverages, and healthy options are always fresh, delicious, and made for you.",
       button: "View our menu",
       link: "rewards",
+      alt: "View rewards",
     },
     {
       image: image2,
@@ -20,6 +21,7 @@ export default function Reward() {
       text: "Download our app & Sign up for free Power Market membership.",
       button: "Download",
       link: "download",
+      alt: "Power Market App download",
     },
     {
       image: image,
@@ -27,6 +29,7 @@ export default function Reward() {
       text: "Scan your barcode before you pay inside to earn and redeem rewards.",
       button: "View rewards",
       link: "rewards",
+      alt: "View rewards",
     },
   ];
   return (
@@ -41,7 +44,7 @@ export default function Reward() {
             >
               <Image
                 src={item.image}
-                alt="reward image"
+                alt={item.alt}
                 className="w-full h-[200px] max-lg:h-[156px] rounded-[16px]"
               ></Image>
               <div className="w-full text-center pt-4 text-[#444444] text-[20px] max-md:text-[16px] font-semibold">
@@ -54,6 +57,7 @@ export default function Reward() {
                 <div className="w-full flex justify-center pt-2">
                   <Link
                     href={item?.link}
+                    aria-label={`${item.alt}`}
                     className="px-4 flex justify-center items-center h-[35px] rounded-[37px] text-white bg-[#005DB8] max-md:text-[12px] "
                   >
                     {item.button}
@@ -64,6 +68,7 @@ export default function Reward() {
                   href="https://www.vroomdelivery.com/powermarket"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`Opens in a new tab: Power market`}
                 >
                   <div className="w-full flex justify-center pt-2">
                     <button className="px-4 h-[35px] rounded-[37px] text-white bg-[#005DB8] max-md:text-[12px] ">

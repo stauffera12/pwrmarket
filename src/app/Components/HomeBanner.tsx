@@ -26,6 +26,7 @@ export const HomeBannner = () => {
       >
         <Link
           href={"/locations"}
+          aria-label="Locations"
           className="absolute flex justify-center items-center bottom-5 md:bottom-10 left-[10%] max-md:left-[20%] w-[200px] max-md:w-[110px] max-md:border-[2px] max-md:text-[12px] h-10 border-[3px] border-[#75BE41] hover:bg-[#75BE41] hover:text-white z-20 rounded-[27px] text-[#444444] font-semibold"
         >
           Find a Store
@@ -34,6 +35,8 @@ export const HomeBannner = () => {
       <div className="absolute top-0 left-0 w-full h-full  flex justify-center items-end max-md:items-center pt-10">
         <div
           className="w-full h-[230px] max-md:h-[80px] max-md:bg-cover max-md:bg-[100%]"
+          role="img"
+          aria-label="background banner Image"
           style={backgroundImageStyle1}
         ></div>
       </div>

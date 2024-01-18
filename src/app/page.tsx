@@ -1,6 +1,4 @@
 import Header from "./Components/Header";
-// import Banner from "./Components/Banner"
-import { Banner } from "./Components/Banner";
 import Menu from "./Components/OutMenu";
 import Buy from "./Components/Buy";
 import Deals from "./Components/Deals";
