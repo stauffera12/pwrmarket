@@ -3,6 +3,7 @@
 import type { Metadata } from 'next';
 import Header from "./../Components/Header"
 import Footer from "./../Components/Footer"
+import Link from "next/link"
 import {
   useLoadScript,
   GoogleMap,
@@ -385,7 +386,7 @@ const PlacesAutocomplete = ({
 
 
       <fieldset>
-        <legend className="py-4 max-md:text-[14px]">Find a PWRmarket Near You</legend>
+        <legend className="py-4 max-md:text-[14px]">Find a PowerMarket Near You</legend>
         <div className='flex justify-between'>
           <div className="flex gap-5 pb-3 ">
             <label className="flex cursor-pointer gap-2 text-size-4 font-bold leading-6 max-md:text-[14px]">
@@ -431,7 +432,7 @@ const PlacesAutocomplete = ({
             {locationList.features.map((item, index) => (
               <li key={index} id={'card-' + index} className="store-locator_store-list-li my-2 ">
                 <a>
-                  <div onClick={() => { hanldeGetStore(item), scrollFunction(index) }} className='store-list-card_root hover:shadow-xl' id={'store-list-card_root-' + index}>
+                  <Link href={'https://hsenergy.cname.meetsoci.com/'} onClick={() => { hanldeGetStore(item), scrollFunction(index) }} className='store-list-card_root hover:shadow-xl' id={'store-list-card_root-' + index}>
 
                     <div className='store-list-card_content max-md:text-[14px]'>
                       <p className='font-semibold'> Store: {item.storeId}</p>
@@ -457,7 +458,7 @@ const PlacesAutocomplete = ({
                       <p>{distance[index]} Miles</p>
                     </div>
                     {/* <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 12" className="store-list-card_icon"><path d="M1.29.71a.996.996 0 0 0 0 1.41L5.17 6 1.29 9.88a.996.996 0 1 0 1.41 1.41L7.29 6.7a.996.996 0 0 0 0-1.41L2.7.7C2.32.32 1.68.32 1.29.71Z"></path></svg> */}
-                  </div>
+                  </Link>
                 </a>
               </li>
 
