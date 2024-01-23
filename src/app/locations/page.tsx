@@ -2,7 +2,6 @@
 import type { Metadata } from "next";
 import Header from "./../Components/Header";
 import Footer from "./../Components/Footer";
-import Link from "next/link";
 import {
   useLoadScript,
   GoogleMap,
@@ -554,8 +553,7 @@ const PlacesAutocomplete = ({
                 className="store-locator_store-list-li my-2 "
               >
                 <a>
-                  <Link
-                    href={'https://hsenergy.cname.meetsoci.com/'}
+                  <div
                     onClick={() => {
                       hanldeGetStore(item), scrollFunction(index);
                     }}
@@ -591,7 +589,7 @@ const PlacesAutocomplete = ({
                       <p>{distance[index]} Miles</p>
                     </div>
                     {/* <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 12" className="store-list-card_icon"><path d="M1.29.71a.996.996 0 0 0 0 1.41L5.17 6 1.29 9.88a.996.996 0 1 0 1.41 1.41L7.29 6.7a.996.996 0 0 0 0-1.41L2.7.7C2.32.32 1.68.32 1.29.71Z"></path></svg> */}
-                  </Link>
+                  </div>
                 </a>
               </li>
             ))}
