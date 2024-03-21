@@ -2,21 +2,25 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image'
-import image1 from '../../../public/images/currentdealds/advil.png'
-import image2 from '../../../public/images/currentdealds/chapstick.png'
-import image3 from '../../../public/images/currentdealds/kind.png'
-import image4 from '../../../public/images/currentdealds/sparkling_ice.png'
-import image5 from '../../../public/images/currentdealds/tums.png'
-import image6 from '../../../public/images/currentdealds/imageright/bang_2.png'
-import image7 from '../../../public/images/currentdealds/imageright/coke.png'
-import image8 from '../../../public/images/currentdealds/imageright/doritos.png'
-import image9 from '../../../public/images/currentdealds/imageright/emergen-c.png'
-import image10 from '../../../public/images/currentdealds/imageright/excedrin.png'
-import image11 from '../../../public/images/currentdealds/imageright/snank.png'
+import image1 from '../../../public/images/currentdealds/reward1.png'
+import image2 from '../../../public/images/currentdealds/reward2.png'
+import image3 from '../../../public/images/currentdealds/reward3.png'
+import image4 from '../../../public/images/currentdealds/reward4.png'
+import image5 from '../../../public/images/currentdealds/reward5.png'
+import image6 from '../../../public/images/currentdealds/reward6.png'
+import image7 from '../../../public/images/currentdealds/reward7.png'
+import image8 from '../../../public/images/currentdealds/reward8.png'
+import image9 from '../../../public/images/currentdealds/reward9.png'
+import image10 from '../../../public/images/currentdealds/reward10.png'
+import image11 from '../../../public/images/currentdealds/reward11.png'
+import image12 from '../../../public/images/currentdealds/reward12.png'
+import image13 from '../../../public/images/currentdealds/reward13.png'
+import image14 from '../../../public/images/currentdealds/reward14.png'
+import image15 from '../../../public/images/currentdealds/reward15.png'
 
 
-const ImageLeft = [image5, image1, image2, image3, image4];
-const ImageRight = [image6, image7, image8, image9, image10, image11]
+const ImageLeft = [image5, image1, image2, image3, image4, image12, image14];
+const ImageRight = [image6, image7, image8, image9, image10, image11, image13, image15]
 const Images = [...ImageLeft, ...ImageRight]
 
 export default function CurrentDeals() {
