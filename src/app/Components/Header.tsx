@@ -6,6 +6,7 @@ import map from "../../../public/images/map.svg";
 import menu from "../../../public/images/menuicon.svg";
 import { useEffect, useState } from "react";
 import { IoClose } from "react-icons/io5";
+import wheelchair from "../../../public/wheelchair.png";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
@@ -26,6 +27,7 @@ const Header = () => {
             Locations
           </Link>
           <div className="flex gap-5">
+            <Image src={wheelchair} alt="wheelchair" width={25} ></Image>
             <Link
               href={"/about"}
               className="cursor-pointer hover:text-black hover:font-semibold"
