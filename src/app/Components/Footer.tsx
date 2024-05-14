@@ -35,7 +35,8 @@ export default function Footer() {
             <button onClick={makeCall} className="cursor-pointer">
               (714) 761-5426
             </button>
-            <button onClick={sendEmail} className="pt-1 cursor-pointer">
+            <br/>
+            <button onClick={sendEmail} className="cursor-pointer">
               customerservice@hnsenergy.com
             </button>
           </div>

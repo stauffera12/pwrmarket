@@ -17,9 +17,12 @@ export default function DownloadApp() {
                             <div className='text-[28px] font-semibold max-md:text-[20px]'>Download Our App</div>
                             <p className='w-[420px] max-md:w-full max-md:text-[12px] pt-3'>Save money at H&S Power Market stores with great coupons on gas, snacks, and more!</p>
                             <div className='flex justify-between pt-5 max-md:gap-5 max-md:pt-2 max-md:flex-col'>
+                            <a href="https://play.google.com/store/apps/details?id=com.rovertown.hnsenergy&hl=en_US&gl=US" target="_blank" rel="noopener noreferrer">
                                 <Image src={google} alt='google' className='w-[190px] h-[56px] max-md:w-[140px] max-md:h-10 cursor-pointer'></Image>
+                            </a>
+                            <a href="https://apps.apple.com/us/app/power-market/id1515421302">
                                 <Image src={app} alt='app' className='w-[190px] h-[56px] max-md:w-[140px] max-md:h-10 cursor-pointer'></Image>
-
+                            </a>
                             </div>
                         </div>
                     </div>
