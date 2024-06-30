@@ -7,6 +7,7 @@ import { Download } from "./Components/Download";
 import Career from "./Components/Career";
 import Footer from "./Components/Footer";
 import { HomeBannner } from "./Components/HomeBanner";
+import { CookieBanner } from "./Components/cookieBanner";
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Power Market",
@@ -16,18 +17,21 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="w-screen h-screen overflow-x-hidden overflow-y-auto">
-      <Header />
-      <main>
-        <HomeBannner />
-        <Menu />
-        <Buy />
-        <Deals />
-        <Reward />
-        <Download />
-        <Career />
-      </main>
-      <Footer />
-    </div>
+    <>
+      <div className="w-screen h-screen overflow-x-hidden overflow-y-auto">
+        <Header />
+        <main>
+          <HomeBannner />
+          <Menu />
+          <Buy />
+          <Deals />
+          <Reward />
+          <Download />
+          <Career />
+        </main>
+        <Footer />
+      </div>
+      <CookieBanner />
+    </>
   );
 }
