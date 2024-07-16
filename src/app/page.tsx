@@ -6,6 +6,7 @@ import Reward from "./Components/Reward";
 import { Download } from "./Components/Download";
 import Career from "./Components/Career";
 import Footer from "./Components/Footer";
+import Carwash from "./Components/Carwash";
 import { HomeBannner } from "./Components/HomeBanner";
 import { CookieBanner } from "./Components/cookieBanner";
 import type { Metadata } from "next";
@@ -24,6 +25,7 @@ export default function Home() {
           <HomeBannner />
           <Menu />
           <Buy />
+          <Carwash />
           <Deals />
           <Reward />
           <Download />

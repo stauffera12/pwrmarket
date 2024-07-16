@@ -65,7 +65,7 @@ const Header = () => {
                   <Link href={"/rewards"}>Rewards</Link>
                 </button>
                 <button className="flex justify-center w-full">
-                  <Link href={"/"}>Carwash</Link>
+                  <Link href={"/carwash"}>Carwash</Link>
                 </button>
                 <button className="flex justify-center w-full">
                   <Link aria-label="Papa Sal’s Deli" href={"/papa-sals"}>
@@ -106,7 +106,7 @@ const Header = () => {
             <Link href={"/rewards"} aria-label="View rewards">
               Rewards
             </Link>
-            <Link href={"/"} aria-label="Carwash">
+            <Link href={"/carwash"} aria-label="Carwash">
               Carwash
             </Link>
             <Link href={"/papa-sals"} aria-label="Papa Sal’s Deli">

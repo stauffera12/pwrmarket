@@ -96,8 +96,18 @@ export default function Footer() {
               Rewards
             </Link>{" "}
             <br />
-            <p className="pt-1 text-[12px]">Carwash</p>
-            <p className="pt-1 text-[12px]">Papa Sal’s</p>
+            <Link
+              href={"/carwash"}
+              className="pt-1 text-[12px] cursor-pointer hover:text-black hover:font-semibold"
+            >
+              Carwash
+            </Link>
+            <Link
+              href={"/papa-sals"}
+              className="pt-1 text-[12px] cursor-pointer hover:text-black hover:font-semibold"
+            >
+              Papa Sal’s
+              </Link>
           </div>
 
           <div className="max-md:w-1/2 max-md:pt-6">
