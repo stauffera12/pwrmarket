@@ -68,7 +68,7 @@ export const Banner: React.FC<Props> = ({
                 </button>
               ) : (
                 <Link
-                  href={"/locations"}
+                  href={"https://locations.pwrmarket.com/"}
                   className="w-[180px] cursor-pointer max-md:w-[60%] max-md:text-[12px] h-10 rounded-[16px] bg-[#0064A9]  text-white font-semibold flex items-center justify-center gap-2"
                 >
                   <Image src={map} alt="Map icon" className=""></Image>

@@ -19,7 +19,7 @@ const Header = () => {
       <div className="w-full h-1/3 max-md:h-[36px] bg-[#EBEBEB] flex justify-center">
         <nav className="h-full max-w-[1120px] w-[90%] flex justify-between text-[#444444] text-[14px] max-md:text-[12px] items-center">
           <Link
-            href={"/locations"}
+            href={"https://locations.pwrmarket.com/"}
             className="cursor-pointer flex gap-3 hover:text-black hover:font-semibold"
             aria-label="Locations"
           >

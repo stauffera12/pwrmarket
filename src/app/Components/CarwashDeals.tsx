@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import image2 from '../../../public/images/Monthly.png'
+import image2 from '../../../public/images/carwash.png'
 import image3 from '../../../public/images/Autospa.png'
 import image4 from '../../../public/images/android.png'
 import image5 from '../../../public/images/iphone.png'

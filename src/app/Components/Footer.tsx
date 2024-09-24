@@ -74,7 +74,7 @@ export default function Footer() {
           <div className="max-md:w-1/2">
             <p className="text-[14px] font-semibold pb-4">Check us out</p>
             <Link
-              href={"/locations"}
+              href={"https://locations.pwrmarket.com/"}
               className="text-[12px] cursor-pointer hover:text-black hover:font-semibold"
             >
               Locations
